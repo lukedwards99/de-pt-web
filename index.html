@@ -2,24 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/de-pt-web/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>de-pt-website</title>
-    <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // https://github.com/rafgraph/spa-github-pages
-      ;(function (l) {
-        if (l.search && l.search.startsWith('?/')) {
-          var q = l.search.slice(2).split('&')
-          var route = q.shift().replace(/~and~/g, '&')
-          var rest = q.length ? '?' + q.join('&').replace(/~and~/g, '&') : ''
-          l.search = ''
-          l.hash = l.hash
-          window.history.replaceState(null, null, l.pathname.replace(/\/$/, '') + '/' + route + rest + l.hash)
-        }
-      })(window.location)
-    </script>
-    <script type="module" crossorigin src="/de-pt-web/assets/index-CA-0BNNt.js"></script>
+      <script>
+        // GitHub Pages SPA routing (pairs with /public/404.html)
+        ;(function () {
+          var l = window.location
+          if (l.search && l.search.startsWith('?/')) {
+            var restored = l.search.slice(2).split('&').join('?')
+            window.history.replaceState(null, '', l.pathname.replace(/\/$/, '') + '/' + restored + l.hash)
+          }
+        })()
+      </script>
+    <script type="module" crossorigin src="/de-pt-web/assets/index-DMlygTBr.js"></script>
     <link rel="stylesheet" crossorigin href="/de-pt-web/assets/index-CkCDqFir.css">
   </head>
   <body>
