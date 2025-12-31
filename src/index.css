@@ -1,0 +1,40 @@
+:root {
+  --dept-brand: #0d6efd; /* Bootstrap primary by default */
+  --dept-dark: #111827;
+  --dept-muted: #6b7280;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  color: #111827;
+  background: #f8fafc;
+}
+
+.dept-hero {
+  background: radial-gradient(1200px 400px at 20% 0%, rgba(13, 110, 253, 0.18), transparent 60%),
+    radial-gradient(900px 500px at 90% 20%, rgba(17, 24, 39, 0.12), transparent 62%),
+    #0b1220;
+  color: #fff;
+}
+
+.dept-hero .lead {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.dept-section-title {
+  letter-spacing: 0.02em;
+}
+
+.dept-card {
+  border: 0;
+  box-shadow: 0 10px 30px rgba(17, 24, 39, 0.08);
+}
+
+.dept-footer {
+  color: rgba(255, 255, 255, 0.75);
+}
