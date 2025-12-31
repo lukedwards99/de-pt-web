@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "type": "program",
+    "title": "12-Week Beginner Program",
+    "description": "Perfect for those just starting their fitness journey. Build a solid foundation with this comprehensive beginner program.",
+    "image": "https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Beginner+Program",
+    "price": "FREE",
+    "downloadLink": "#download-beginner-program"
+  },
+  {
+    "id": 2,
+    "type": "program",
+    "title": "Advanced Hypertrophy Protocol",
+    "description": "Take your muscle building to the next level with this advanced training protocol designed for serious lifters.",
+    "image": "https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Hypertrophy+Protocol",
+    "price": "FREE",
+    "downloadLink": "#download-hypertrophy"
+  },
+  {
+    "id": 3,
+    "type": "video",
+    "title": "Proper Squat Form Guide",
+    "description": "Master the king of exercises with detailed form breakdown and common mistakes to avoid.",
+    "image": "https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Squat+Tutorial",
+    "price": "FREE",
+    "downloadLink": "#video-squat-form"
+  },
+  {
+    "id": 4,
+    "type": "program",
+    "title": "Fat Loss Accelerator",
+    "description": "Science-based approach to sustainable fat loss while maintaining muscle mass.",
+    "image": "https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Fat+Loss+Program",
+    "price": "FREE",
+    "downloadLink": "#download-fatloss"
+  },
+  {
+    "id": 5,
+    "type": "video",
+    "title": "Deadlift Masterclass",
+    "description": "Complete guide to deadlifting safely and effectively. Build a stronger posterior chain.",
+    "image": "https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Deadlift+Guide",
+    "price": "FREE",
+    "downloadLink": "#video-deadlift"
+  },
+  {
+    "id": 6,
+    "type": "program",
+    "title": "Nutrition Fundamentals",
+    "description": "Learn the basics of nutrition for muscle gain and fat loss. Meal planning templates included.",
+    "image": "https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Nutrition+Guide",
+    "price": "FREE",
+    "downloadLink": "#download-nutrition"
+  },
+  {
+    "id": 7,
+    "type": "video",
+    "title": "Bench Press Technique",
+    "description": "Build a bigger chest with proper bench press technique. Avoid shoulder injuries.",
+    "image": "https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Bench+Press",
+    "price": "FREE",
+    "downloadLink": "#video-bench"
+  },
+  {
+    "id": 8,
+    "type": "program",
+    "title": "Home Workout Series",
+    "description": "Effective workouts you can do at home with minimal equipment. No gym required.",
+    "image": "https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Home+Workouts",
+    "price": "FREE",
+    "downloadLink": "#download-home"
+  },
+  {
+    "id": 9,
+    "type": "video",
+    "title": "Supplement Guide",
+    "description": "Cut through the marketing hype. Learn what supplements actually work and which to skip.",
+    "image": "https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Supplements",
+    "price": "FREE",
+    "downloadLink": "#video-supplements"
+  }
+]
