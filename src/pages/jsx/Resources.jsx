@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../css/Resources.css';
 import resourcesData from '../../assets/resources.json';
 import ResourceCard from '../../components/jsx/ResourceCard';
 
 function Resources() {
-  // Placeholder resource data - these would be "free" downloads
-  const resources = resourcesData;
+  // State for managing the active filter
+  const [activeFilter, setActiveFilter] = useState('all');
+  
+  // Filter resources based on the active filter
+  const filteredResources = activeFilter === 'all' 
+    ? resourcesData 
+    : resourcesData.filter(resource => resource.type === activeFilter);
+  
+  // Handle filter button click
+  const handleFilterClick = (filterType) => {
+    setActiveFilter(filterType);
+  };
 
   const handleDownload = (e, resource) => {
     e.preventDefault();
@@ -41,13 +51,22 @@ function Resources() {
       <section className="resources-filter">
         <div className="container">
           <div className="filter-buttons">
-            <button className="filter-btn active" data-filter="all">
+            <button 
+              className={`filter-btn ${activeFilter === 'all' ? 'active' : ''}`}
+              onClick={() => handleFilterClick('all')}
+            >
               <i className="fas fa-th"></i> All Resources
             </button>
-            <button className="filter-btn" data-filter="program">
+            <button 
+              className={`filter-btn ${activeFilter === 'program' ? 'active' : ''}`}
+              onClick={() => handleFilterClick('program')}
+            >
               <i className="fas fa-book"></i> Programs
             </button>
-            <button className="filter-btn" data-filter="video">
+            <button 
+              className={`filter-btn ${activeFilter === 'video' ? 'active' : ''}`}
+              onClick={() => handleFilterClick('video')}
+            >
               <i className="fas fa-video"></i> Videos
             </button>
           </div>
@@ -57,7 +76,7 @@ function Resources() {
       <section className="resources-grid-section">
         <div className="container">
           <div className="resources-grid">
-            {resources.map(resource => (
+            {filteredResources.map(resource => (
               <ResourceCard 
                 key={resource.id} 
                 resource={resource} 
