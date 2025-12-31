@@ -1,6 +1,7 @@
 import React from 'react';
-import './Resources.css';
-import resourcesData from '../assets/resources.json';
+import '../css/Resources.css';
+import resourcesData from '../../assets/resources.json';
+import ResourceCard from '../../components/jsx/ResourceCard';
 
 function Resources() {
   // Placeholder resource data - these would be "free" downloads
@@ -57,30 +58,11 @@ function Resources() {
         <div className="container">
           <div className="resources-grid">
             {resources.map(resource => (
-              <div key={resource.id} className="resource-card" data-type={resource.type}>
-                <div className="resource-image">
-                  {/* PLACEHOLDER IMAGES - Replace with actual thumbnails */}
-                  <img src={resource.image} alt={resource.title} />
-                  <div className="resource-type-badge">
-                    <i className={resource.type === 'program' ? 'fas fa-book' : 'fas fa-video'}></i>
-                    {resource.type === 'program' ? 'Program' : 'Video'}
-                  </div>
-                </div>
-                <div className="resource-content">
-                  <h3 className="resource-title">{resource.title}</h3>
-                  <p className="resource-description">{resource.description}</p>
-                  <div className="resource-footer">
-                    <span className="resource-price">{resource.price}</span>
-                    <a 
-                      href={resource.downloadLink} 
-                      className="download-btn"
-                      onClick={(e) => handleDownload(e, resource)}
-                    >
-                      <i className="fas fa-download"></i> Download
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <ResourceCard 
+                key={resource.id} 
+                resource={resource} 
+                onDownload={handleDownload}
+              />
             ))}
           </div>
         </div>

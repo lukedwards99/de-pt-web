@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
-import Navigation from './components/Navigation';
-import Footer from './components/Footer';
-import ScrollToTop from './components/ScrollToTop';
-import Home from './pages/Home';
-import Contact from './pages/Contact';
-import Resources from './pages/Resources';
+import Navigation from './components/jsx/Navigation';
+import Footer from './components/jsx/Footer';
+import ScrollToTop from './components/jsx/ScrollToTop';
+import Home from './pages/jsx/Home';
+import Contact from './pages/jsx/Contact';
+import Resources from './pages/jsx/Resources';
 import './App.css';
 
 function App() {
