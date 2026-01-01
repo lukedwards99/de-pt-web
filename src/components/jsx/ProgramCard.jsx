@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/ResourceCard.css';
 
-function ProgramCard({ resource, third_party = true }) {
+function ProgramCard({ resource }) {
   return (
     <div className="resource-card" data-type={resource.type}>
       <div className="resource-image">
@@ -10,7 +10,7 @@ function ProgramCard({ resource, third_party = true }) {
           <i className="fas fa-book"></i>
           Program
         </div>
-        {third_party && (
+        {resource.thirdParty && (
           <div className="third-party-badge" title="Third-party resource">
             <i className="fas fa-external-link-alt"></i>
           </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/ResourceCard.css';
 
-function VideoCard({ resource, onDownload }) {
+function VideoCard({ resource }) {
   return (
     <div className="resource-card" data-type={resource.type}>
       <div className="resource-image">
@@ -10,6 +10,11 @@ function VideoCard({ resource, onDownload }) {
           <i className="fas fa-video"></i>
           Video
         </div>
+        {resource.thirdParty && (
+          <div className="third-party-badge" title="Third-party resource">
+            <i className="fas fa-external-link-alt"></i>
+          </div>
+        )}
       </div>
       <div className="resource-content">
         <h3 className="resource-title">{resource.title}</h3>
@@ -19,7 +24,6 @@ function VideoCard({ resource, onDownload }) {
           <a 
             href={resource.downloadLink} 
             className="download-btn"
-            onClick={(e) => onDownload(e, resource)}
           >
             <i className="fas fa-download"></i> Download
           </a>

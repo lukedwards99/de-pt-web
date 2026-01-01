@@ -34,8 +34,10 @@ function Resources() {
             <h2>Knowledge Should Be Free</h2>
             <p>
               At D&E P.T., we believe everyone deserves access to quality fitness information. 
-              Browse our collection of free training programs, nutrition guides, and educational 
-              videos. All resources are designed by us based on proven principles and years of experience.
+              Browse our curated collection of free training programs, nutrition guides, and educational 
+              videos. Resources here are designed by or endorsed by us based on proven principles 
+              and years of experience. We hope to one day have an encyclopedia of free resources to 
+              make the need for a personal trainer obsolete!
             </p>
           </div>
         </div>

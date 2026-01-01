@@ -6,7 +6,8 @@
     "description": "Perfect for those just starting their fitness journey. Build a solid foundation with this comprehensive beginner program.",
     "image": "https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Beginner+Program",
     "price": "FREE",
-    "downloadLink": "#download-beginner-program"
+    "downloadLink": "#download-beginner-program",
+    "thirdParty": true
   },
   {
     "id": 2,
@@ -24,7 +25,8 @@
     "description": "Master the king of exercises with detailed form breakdown and common mistakes to avoid.",
     "image": "https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Squat+Tutorial",
     "price": "FREE",
-    "downloadLink": "#video-squat-form"
+    "downloadLink": "#video-squat-form",
+    "thirdParty": true
   },
   {
     "id": 4,
