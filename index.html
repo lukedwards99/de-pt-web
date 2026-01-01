@@ -7,13 +7,16 @@
     <title>de-pt-website</title>
       <script>
         // GitHub Pages SPA routing (pairs with /public/404.html)
-        ;(function () {
-          var l = window.location
+        // This restores the actual route from the ?/ query parameter
+        (function () {
+          var l = window.location;
           if (l.search && l.search.startsWith('?/')) {
-            var restored = l.search.slice(2).split('&').join('?')
-            window.history.replaceState(null, '', l.pathname.replace(/\/$/, '') + '/' + restored + l.hash)
+            var route = l.search.slice(2).split('&')[0];
+            var query = l.search.slice(2).split('&').slice(1).join('&');
+            var restored = route + (query ? '?' + query : '') + l.hash;
+            window.history.replaceState(null, '', l.pathname.replace(/\/$/, '') + '/' + restored);
           }
-        })()
+        })();
       </script>
     <script type="module" crossorigin src="/de-pt-web/assets/index-COuJ_8i7.js"></script>
     <link rel="stylesheet" crossorigin href="/de-pt-web/assets/index-BiWtQG1S.css">
