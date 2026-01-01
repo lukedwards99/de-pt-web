@@ -10,7 +10,7 @@ function VideoCard({ resource }) {
           <i className="fas fa-video"></i>
           Video
         </div>
-        {resource.thirdParty && (
+        {resource.thirdPartyLink && (
           <div className="third-party-badge" title="Third-party resource">
             <i className="fas fa-external-link-alt"></i>
           </div>

@@ -10,7 +10,7 @@ function ProgramCard({ resource }) {
           <i className="fas fa-book"></i>
           Program
         </div>
-        {resource.thirdParty && (
+        {resource.thirdPartyLink && (
           <div className="third-party-badge" title="Third-party resource">
             <i className="fas fa-external-link-alt"></i>
           </div>
