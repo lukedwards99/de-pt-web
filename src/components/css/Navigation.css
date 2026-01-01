@@ -25,6 +25,7 @@
   flex-direction: column;
   text-decoration: none;
   transition: transform 0.3s ease;
+  padding-right: 10px;
 }
 
 .nav-logo:hover {
