@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/ResourceCard.css';
 
-function ProgramCard({ resource, onDownload }) {
+function ProgramCard({ resource, third_party = true }) {
   return (
     <div className="resource-card" data-type={resource.type}>
       <div className="resource-image">
@@ -10,6 +10,11 @@ function ProgramCard({ resource, onDownload }) {
           <i className="fas fa-book"></i>
           Program
         </div>
+        {third_party && (
+          <div className="third-party-badge" title="Third-party resource">
+            <i className="fas fa-external-link-alt"></i>
+          </div>
+        )}
       </div>
       <div className="resource-content">
         <h3 className="resource-title">{resource.title}</h3>
@@ -19,7 +24,6 @@ function ProgramCard({ resource, onDownload }) {
           <a 
             href={resource.downloadLink} 
             className="download-btn"
-            onClick={(e) => onDownload(e, resource)}
           >
             <i className="fas fa-download"></i> Download
           </a>

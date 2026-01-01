@@ -17,13 +17,6 @@ function Resources() {
     setActiveFilter(filterType);
   };
 
-  const handleDownload = (e, resource) => {
-    e.preventDefault();
-    // Placeholder for actual download logic
-    // You would typically redirect to a download page or trigger a file download
-    alert(`Downloading: ${resource.title}\n\nNote: This is a placeholder. Replace with actual download links.`);
-  };
-
   return (
     <div className="resources-page">
       <section className="resources-hero">
@@ -80,7 +73,6 @@ function Resources() {
               <ResourceCard 
                 key={resource.id} 
                 resource={resource} 
-                onDownload={handleDownload}
               />
             ))}
           </div>

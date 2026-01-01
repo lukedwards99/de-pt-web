@@ -3,12 +3,12 @@ import ProgramCard from './ProgramCard';
 import VideoCard from './VideoCard';
 import '../css/ResourceCard.css';
 
-function ResourceCard({ resource, onDownload }) {
+function ResourceCard({ resource, }) {
   // Route to the appropriate card component based on resource type
   if (resource.type === 'program') {
-    return <ProgramCard resource={resource} onDownload={onDownload} />;
+    return <ProgramCard resource={resource}  />;
   } else if (resource.type === 'video') {
-    return <VideoCard resource={resource} onDownload={onDownload} />;
+    return <VideoCard resource={resource} />;
   }
   
   // Fallback for unknown types
