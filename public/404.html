@@ -2,15 +2,29 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="refresh" content="0; url=./" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>D&E P.T.</title>
     <script>
       // GitHub Pages SPA fallback:
-      // rewrite /<repo>/some/path -> /<repo>/?/some/path so the SPA router can pick it up.
-      var l = window.location;
-      var path = l.pathname.replace(/^(.*\/)([^\/]+)$/, '$1$2');
-      l.replace(l.origin + path.split('/').slice(0, 3).join('/') + '/?/' + l.pathname.split('/').slice(3).join('/') + l.search + l.hash);
+      // Store the current path and redirect to base with ?/ prefix
+      // The main index.html will restore the actual route
+      (function() {
+        var pathSegmentsToKeep = 2; // For https://user.github.io/repo/, keep 2 segments
+        var l = window.location;
+        
+        // Get the base path (e.g., /de-pt-web/)
+        var basePath = l.pathname.split('/').slice(0, pathSegmentsToKeep + 1).join('/');
+        
+        // Get the route after the base path
+        var route = l.pathname.split('/').slice(pathSegmentsToKeep + 1).join('/');
+        
+        // Redirect to base with the route encoded in query string
+        l.replace(
+          l.protocol + '//' + l.host + basePath + '/?/' + route +
+          (l.search ? '&' + l.search.slice(1) : '') +
+          l.hash
+        );
+      })();
     </script>
   </head>
   <body></body>
