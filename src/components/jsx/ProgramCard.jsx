@@ -10,23 +10,28 @@ function ProgramCard({ resource }) {
           <i className="fas fa-book"></i>
           Program
         </div>
-        {resource.thirdPartyLink && (
-          <div className="third-party-badge" title="Third-party resource">
-            <i className="fas fa-external-link-alt"></i>
-          </div>
-        )}
       </div>
       <div className="resource-content">
         <h3 className="resource-title">{resource.title}</h3>
         <p className="resource-description">{resource.description}</p>
         <div className="resource-footer">
-          <span className="resource-price">{resource.price}</span>
-          <a 
-            href={resource.downloadLink} 
-            className="download-btn"
-          >
-            <i className="fas fa-download"></i> Download
-          </a>
+          {resource.thirdPartyLink ? (
+            <a 
+              href={resource.downloadLink} 
+              className="download-btn third-party-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fas fa-external-link-alt"></i> View on Third Party
+            </a>
+          ) : (
+            <a 
+              href={resource.downloadLink} 
+              className="download-btn"
+            >
+              <i className="fas fa-download"></i> Download
+            </a>
+          )}
         </div>
       </div>
     </div>
