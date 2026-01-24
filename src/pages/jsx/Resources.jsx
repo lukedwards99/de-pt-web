@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import '../css/Resources.css';
 import resourcesData from '../../assets/resources.json';
 import ResourceCard from '../../components/jsx/ResourceCard';
@@ -30,7 +31,7 @@ function Resources() {
       </section>
 
       <section className="resources-intro">
-        <div className="container">
+        <Container>
           <div className="intro-content">
             <h2>Knowledge Should Be Accessible</h2>
             <p>
@@ -41,11 +42,11 @@ function Resources() {
               If you have any questions about how to implement them, feel free to reach out!
             </p>
           </div>
-        </div>
+        </Container>
       </section>
 
       <section className="resources-filter">
-        <div className="container">
+        <Container>
           <div className="filter-buttons">
             <button 
               className={`filter-btn ${activeFilter === 'all' ? 'active' : ''}`}
@@ -66,11 +67,11 @@ function Resources() {
               <i className="fas fa-video"></i> Videos
             </button>
           </div>
-        </div>
+        </Container>
       </section>
 
       <section className="resources-grid-section">
-        <div className="container">
+        <Container>
           <div className="resources-grid">
             {filteredResources.map(resource => (
               <ResourceCard 
@@ -79,11 +80,11 @@ function Resources() {
               />
             ))}
           </div>
-        </div>
+        </Container>
       </section>
 
       <section className="resources-cta">
-        <div className="container">
+        <Container>
           <div className="cta-content">
             <h2>Want Personalized Coaching?</h2>
             <p>
@@ -94,7 +95,7 @@ function Resources() {
               Apply for Coaching
             </a>
           </div>
-        </div>
+        </Container>
       </section>
     </div>
   );

@@ -230,27 +230,3 @@
   color: #1a1a1a;
   transform: translateX(5px);
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .contact-title {
-    font-size: 2.5rem;
-  }
-
-  .contact-subtitle {
-    font-size: 1.1rem;
-  }
-
-  .contact-card {
-    padding: 30px 20px;
-  }
-
-  .form-title {
-    font-size: 2rem;
-  }
-
-  .contact-methods {
-    flex-direction: column;
-    gap: 20px;
-  }
-}

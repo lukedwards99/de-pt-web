@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import '../css/Contact.css';
 
 function Contact() {
@@ -52,9 +53,9 @@ function Contact() {
       </section>
 
       <section className="contact-form-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-8 mx-auto">
+        <Container>
+          <Row>
+            <Col lg={8} className="mx-auto">
               {submitted && (
                 <div className="alert alert-success" role="alert">
                   <i className="fas fa-check-circle"></i> Thank you! We've received your inquiry and will contact you soon.
@@ -212,9 +213,9 @@ function Contact() {
                   */}
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
     </div>
   );

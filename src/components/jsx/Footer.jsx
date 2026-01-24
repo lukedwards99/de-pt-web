@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Container, Row, Col } from 'react-bootstrap';
 import '../css/Footer.css';
 
 function Footer() {
@@ -7,8 +8,9 @@ function Footer() {
 
   return (
     <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-section">
+      <Container>
+        <Row className="footer-container">
+        <Col lg={4} md={6} sm={12} className="footer-section">
           <h3 className="footer-title">D&E P.T.</h3>
           <p className="footer-description">
             Douglas & Edwards Personal Training - Transforming lives through 
@@ -29,18 +31,18 @@ function Footer() {
               <i className="fab fa-twitter"></i>
             </a>
           </div>
-        </div>
+        </Col>
 
-        <div className="footer-section">
+        <Col lg={4} md={6} sm={12} className="footer-section">
           <h4 className="footer-heading">Quick Links</h4>
           <ul className="footer-links">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/contact">Contact for Coaching</Link></li>
             <li><Link to="/resources">Free Resources</Link></li>
           </ul>
-        </div>
+        </Col>
 
-        <div className="footer-section">
+        <Col lg={4} md={12} sm={12} className="footer-section">
           <h4 className="footer-heading">Contact Info</h4>
           <ul className="footer-contact">
             <li>
@@ -56,8 +58,9 @@ function Footer() {
               <span>Your City, State</span>
             </li>
           </ul>
-        </div>
-      </div>
+        </Col>
+      </Row>
+      </Container>
 
       <div className="footer-bottom">
         <p>&copy; {currentYear} D&E P.T. All rights reserved.</p>

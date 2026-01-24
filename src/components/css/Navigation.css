@@ -11,11 +11,6 @@
 
 .nav-container {
   max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 80px;
 }
 
@@ -52,15 +47,7 @@
 
 /* Navigation Menu */
 .nav-menu {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
   gap: 10px;
-}
-
-.nav-item {
-  position: relative;
 }
 
 .nav-link {
@@ -95,116 +82,4 @@
 
 .nav-link.active:hover {
   background-color: #c01232;
-}
-
-/* Mobile Toggle Button */
-.nav-toggle {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 24px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  z-index: 1001;
-}
-
-.nav-toggle span {
-  width: 100%;
-  height: 3px;
-  background-color: #ffffff;
-  border-radius: 3px;
-  transition: all 0.3s ease;
-}
-
-.nav-toggle:hover span {
-  background-color: #dc143c;
-}
-
-.nav-toggle.active span:nth-child(1) {
-  transform: rotate(45deg) translate(8px, 8px);
-  background-color: #dc143c;
-}
-
-.nav-toggle.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.nav-toggle.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -7px);
-  background-color: #dc143c;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .nav-toggle {
-    display: flex;
-  }
-
-  .nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 80px;
-    flex-direction: column;
-    background-color: #1a1a1a;
-    width: 100%;
-    text-align: center;
-    transition: left 0.3s ease;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    padding: 20px 0;
-    gap: 0;
-  }
-
-  .nav-menu.active {
-    left: 0;
-  }
-
-  .nav-item {
-    width: 100%;
-  }
-
-  .nav-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    font-size: 1.1rem;
-    border-radius: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .nav-link:hover {
-    background-color: rgba(220, 20, 60, 0.2);
-  }
-
-  .logo-text {
-    font-size: 1.6rem;
-  }
-
-  .logo-tagline {
-    font-size: 0.6rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .nav-container {
-    padding: 0 15px;
-    height: 70px;
-  }
-
-  .logo-text {
-    font-size: 1.4rem;
-    letter-spacing: 2px;
-  }
-
-  .logo-tagline {
-    font-size: 0.55rem;
-    letter-spacing: 1px;
-  }
-
-  .nav-menu {
-    top: 70px;
-  }
 }
