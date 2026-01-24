@@ -22,7 +22,7 @@ function Resources() {
     <div className="resources-page">
       <section className="resources-hero">
         <div className="resources-hero-overlay">
-          <h1 className="resources-title">Free Resources</h1>
+          <h1 className="resources-title">Resources</h1>
           <p className="resources-subtitle">
             Transparency is key to building trust. Here are some of the resources we use ourselves
             and share with our clients to help them achieve their fitness goals.
