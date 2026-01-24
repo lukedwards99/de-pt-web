@@ -6,7 +6,11 @@
     "description": "Home of Lyle McDonald's comprehensive articles on fat loss, muscle gain, and body recomposition.",
     "image": "https://bodyrecomposition.com/wp-content/uploads/2019/10/br_logo.jpg",
     "downloadLink": "https://bodyrecomposition.com/bodyrecomposition-articles",
-    "thirdPartyLink": true
+    "thirdPartyLink": true,
+    "badgeText": "Website",
+    "badgeIcon": "fa-globe",
+    "buttonText": "Visit Website",
+    "buttonIcon": "fa-external-link-alt"
   },
   {
     "id": 2,
@@ -14,7 +18,11 @@
     "title": "Advanced Hypertrophy Protocol",
     "description": "Take your muscle building to the next level with this advanced training protocol designed for serious lifters.",
     "image": "https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Hypertrophy+Protocol",
-    "downloadLink": "#download-hypertrophy"
+    "downloadLink": "#download-hypertrophy",
+    "badgeText": "Program",
+    "badgeIcon": "fa-book",
+    "buttonText": "Download",
+    "buttonIcon": "fa-download"
   },
   {
     "id": 3,
@@ -23,7 +31,11 @@
     "description": "Master the king of exercises with detailed form breakdown and common mistakes to avoid.",
     "image": "https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Squat+Tutorial",
     "downloadLink": "#video-squat-form",
-    "thirdPartyLink": true
+    "thirdPartyLink": true,
+    "badgeText": "Video",
+    "badgeIcon": "fa-video",
+    "buttonText": "Watch Now",
+    "buttonIcon": "fa-play"
   },
   {
     "id": 4,
@@ -31,7 +43,11 @@
     "title": "Fat Loss Accelerator",
     "description": "Science-based approach to sustainable fat loss while maintaining muscle mass.",
     "image": "https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Fat+Loss+Program",
-    "downloadLink": "#download-fatloss"
+    "downloadLink": "#download-fatloss",
+    "badgeText": "Program",
+    "badgeIcon": "fa-book",
+    "buttonText": "Download",
+    "buttonIcon": "fa-download"
   },
   {
     "id": 5,
@@ -39,7 +55,11 @@
     "title": "Deadlift Masterclass",
     "description": "Complete guide to deadlifting safely and effectively. Build a stronger posterior chain.",
     "image": "https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Deadlift+Guide",
-    "downloadLink": "#video-deadlift"
+    "downloadLink": "#video-deadlift",
+    "badgeText": "Video",
+    "badgeIcon": "fa-video",
+    "buttonText": "Watch Now",
+    "buttonIcon": "fa-play"
   },
   {
     "id": 6,
@@ -47,7 +67,11 @@
     "title": "Nutrition Fundamentals",
     "description": "Learn the basics of nutrition for muscle gain and fat loss. Meal planning templates included.",
     "image": "https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Nutrition+Guide",
-    "downloadLink": "#download-nutrition"
+    "downloadLink": "#download-nutrition",
+    "badgeText": "Guide",
+    "badgeIcon": "fa-utensils",
+    "buttonText": "Download",
+    "buttonIcon": "fa-download"
   },
   {
     "id": 7,
@@ -55,7 +79,11 @@
     "title": "Bench Press Technique",
     "description": "Build a bigger chest with proper bench press technique. Avoid shoulder injuries.",
     "image": "https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Bench+Press",
-    "downloadLink": "#video-bench"
+    "downloadLink": "#video-bench",
+    "badgeText": "Video",
+    "badgeIcon": "fa-video",
+    "buttonText": "Watch Now",
+    "buttonIcon": "fa-play"
   },
   {
     "id": 8,
@@ -63,7 +91,11 @@
     "title": "Home Workout Series",
     "description": "Effective workouts you can do at home with minimal equipment. No gym required.",
     "image": "https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Home+Workouts",
-    "downloadLink": "#download-home"
+    "downloadLink": "#download-home",
+    "badgeText": "Program",
+    "badgeIcon": "fa-home",
+    "buttonText": "Download",
+    "buttonIcon": "fa-download"
   },
   {
     "id": 9,
@@ -71,6 +103,10 @@
     "title": "Supplement Guide",
     "description": "Cut through the marketing hype. Learn what supplements actually work and which to skip.",
     "image": "https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Supplements",
-    "downloadLink": "#video-supplements"
+    "downloadLink": "#video-supplements",
+    "badgeText": "Video",
+    "badgeIcon": "fa-pills",
+    "buttonText": "Watch Now",
+    "buttonIcon": "fa-play"
   }
 ]
