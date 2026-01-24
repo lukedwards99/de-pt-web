@@ -11,9 +11,9 @@ function Footer() {
       <Container>
         <Row className="footer-container">
         <Col lg={4} md={6} sm={12} className="footer-section">
-          <h3 className="footer-title">D&E P.T.</h3>
+          <h3 className="footer-title">BDE P.T.</h3>
           <p className="footer-description">
-            Douglas & Edwards Personal Training - Transforming lives through 
+            Buckwinkler, Douglas, & Edwards Personal Training - Transforming lives through 
             personalized fitness coaching and expert guidance.
           </p>
           <div className="social-links">
@@ -22,13 +22,10 @@ function Footer() {
               <i className="fab fa-instagram"></i>
             </a>
             <a href="#facebook" className="social-link" aria-label="Facebook">
-              <i className="fab fa-facebook-f"></i>
+              <i className="fab fa-tiktok"></i>
             </a>
             <a href="#youtube" className="social-link" aria-label="YouTube">
               <i className="fab fa-youtube"></i>
-            </a>
-            <a href="#twitter" className="social-link" aria-label="Twitter">
-              <i className="fab fa-twitter"></i>
             </a>
           </div>
         </Col>
@@ -37,8 +34,8 @@ function Footer() {
           <h4 className="footer-heading">Quick Links</h4>
           <ul className="footer-links">
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/contact">Contact for Coaching</Link></li>
-            <li><Link to="/resources">Free Resources</Link></li>
+            <li><Link to="/contact">Coaching Application</Link></li>
+            <li><Link to="/resources">Resources</Link></li>
           </ul>
         </Col>
 
@@ -63,7 +60,7 @@ function Footer() {
       </Container>
 
       <div className="footer-bottom">
-        <p>&copy; {currentYear} D&E P.T. All rights reserved.</p>
+        <p>&copy; {currentYear} BDE P.T. All rights reserved.</p>
         <p className="footer-credit">Built by Luke Edwards & Kyle Douglas</p>
       </div>
     </footer>

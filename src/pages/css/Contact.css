@@ -2,12 +2,12 @@
 
 .contact-page {
   background-color: #ffffff;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 
 /* Contact Hero */
 .contact-hero {
-  height: 400px;
+  height: 50vh;
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   position: relative;
   display: flex;
@@ -50,6 +50,9 @@
   color: #f0f0f0;
   font-weight: 300;
   max-width: 600px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px 15px;
+  border-radius: 8px;
 }
 
 /* Form Section */

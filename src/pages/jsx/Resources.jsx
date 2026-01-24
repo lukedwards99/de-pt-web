@@ -58,7 +58,13 @@ function Resources() {
               className={`filter-btn ${activeFilter === 'program' ? 'active' : ''}`}
               onClick={() => handleFilterClick('program')}
             >
-              <i className="fas fa-book"></i> Programs/Books
+              <i className="fas fa-book"></i> Programs
+            </button>
+            <button 
+              className={`filter-btn ${activeFilter === 'book' ? 'active' : ''}`}
+              onClick={() => handleFilterClick('book')}
+            >
+              <i className="fas fa-book"></i> Books
             </button>
             <button 
               className={`filter-btn ${activeFilter === 'video' ? 'active' : ''}`}
@@ -94,7 +100,7 @@ function Resources() {
           <div className="cta-content">
             <h2>Want Personalized Coaching?</h2>
             <p>
-              While these free resources are great for self-guided training, nothing beats 
+              While these resources are great for self-guided training, nothing beats 
               personalized coaching tailored to your unique goals and needs.
             </p>
             <a href="/de-pt-web/contact" className="cta-btn">

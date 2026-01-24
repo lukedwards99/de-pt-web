@@ -1,6 +1,7 @@
-import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../css/Home.css';
+import lukeImage from '../../assets/images/luke-primary.jpeg';
+import kyleImage from '../../assets/images/kyle-primary.jpeg';
 
 function Home() {
   return (
@@ -24,9 +25,8 @@ function Home() {
           <Row>
             <Col md={6} className="trainer-card">
               <div className="trainer-image-wrapper">
-                {/* PLACEHOLDER IMAGE - Replace with actual photo of Luke */}
                 <img 
-                  src="https://via.placeholder.com/400x400/1a1a1a/dc143c?text=Luke+Edwards" 
+                  src={lukeImage} 
                   alt="Luke Edwards - Personal Trainer" 
                   className="trainer-image"
                 />
@@ -53,7 +53,7 @@ function Home() {
               <div className="trainer-image-wrapper">
                 {/* PLACEHOLDER IMAGE - Replace with actual photo of Kyle */}
                 <img 
-                  src="https://via.placeholder.com/400x400/1a1a1a/dc143c?text=Kyle+Douglas" 
+                  src={kyleImage} 
                   alt="Kyle Douglas - Personal Trainer" 
                   className="trainer-image"
                 />
