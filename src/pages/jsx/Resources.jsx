@@ -58,13 +58,19 @@ function Resources() {
               className={`filter-btn ${activeFilter === 'program' ? 'active' : ''}`}
               onClick={() => handleFilterClick('program')}
             >
-              <i className="fas fa-book"></i> Programs
+              <i className="fas fa-book"></i> Programs/Books
             </button>
             <button 
               className={`filter-btn ${activeFilter === 'video' ? 'active' : ''}`}
               onClick={() => handleFilterClick('video')}
             >
               <i className="fas fa-video"></i> Videos
+            </button>
+            <button 
+              className={`filter-btn ${activeFilter === 'website' ? 'active' : ''}`}
+              onClick={() => handleFilterClick('website')}
+            >
+              <i className="fas fa-globe"></i> Websites
             </button>
           </div>
         </Container>
