@@ -22,8 +22,8 @@ function Navigation() {
     <nav className="navbar">
       <div className="nav-container">
         <Link to="/" className="nav-logo" onClick={closeMenu}>
-          <span className="logo-text">D&E P.T.</span>
-          <span className="logo-tagline">Douglas & Edwards</span>
+          <span className="logo-text">BDE P.T.</span>
+          <span className="logo-tagline">Buckwinkler, Douglas, & Edwards</span>
         </Link>
 
         <button 

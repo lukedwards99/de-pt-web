@@ -23,7 +23,8 @@ function Resources() {
         <div className="resources-hero-overlay">
           <h1 className="resources-title">Free Resources</h1>
           <p className="resources-subtitle">
-            Quality training programs and educational content at no cost
+            Transparency is key to building trust. Here are some of the resources we use ourselves
+            and share with our clients to help them achieve their fitness goals.
           </p>
         </div>
       </section>
@@ -31,13 +32,13 @@ function Resources() {
       <section className="resources-intro">
         <div className="container">
           <div className="intro-content">
-            <h2>Knowledge Should Be Free</h2>
+            <h2>Knowledge Should Be Accessible</h2>
             <p>
               At D&E P.T., we believe everyone deserves access to quality fitness information. 
               Browse our curated collection of free training programs, nutrition guides, and educational 
               videos. Resources here are designed by or endorsed by us based on proven principles 
-              and years of experience. We hope to one day have an encyclopedia of free resources to 
-              make the need for a personal trainer obsolete!
+              and years of experience. These resources are the same ones we base our coaching on.
+              If you have any questions about how to implement them, feel free to reach out!
             </p>
           </div>
         </div>

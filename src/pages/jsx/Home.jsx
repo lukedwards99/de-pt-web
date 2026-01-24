@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import '../css/Home.css';
 
 function Home() {
@@ -8,9 +9,9 @@ function Home() {
       <section className="hero-section">
         <div className="hero-overlay">
           <div className="hero-content">
-            <h1 className="hero-title">D&E P.T.</h1>
-            <h2 className="hero-subtitle">Douglas & Edwards Personal Training</h2>
-            <p className="hero-tagline">Transform Your Body, Transform Your Life</p>
+            <h1 className="hero-title display-1 display-md-1">BDE P.T.</h1>
+            <h2 className="hero-subtitle h3 h-md-2">Buckwinkler, Douglas, & Edwards Personal Training</h2>
+            {/* <p className="hero-tagline">Transform Your Body, Transform Your Life</p> */}
             <a href="/de-pt-web/contact" className="hero-btn">Start Your Journey</a>
           </div>
         </div>
@@ -18,10 +19,10 @@ function Home() {
 
       {/* About Us Section */}
       <section className="about-section">
-        <div className="container">
+        <Container>
           <h2 className="section-title">Meet Your Trainers</h2>
-          <div className="row">
-            <div className="col-md-6 trainer-card">
+          <Row>
+            <Col md={6} className="trainer-card">
               <div className="trainer-image-wrapper">
                 {/* PLACEHOLDER IMAGE - Replace with actual photo of Luke */}
                 <img 
@@ -46,9 +47,9 @@ function Home() {
                   <span className="specialty-badge">Nutrition</span>
                 </div>
               </div>
-            </div>
+            </Col>
 
-            <div className="col-md-6 trainer-card">
+            <Col md={6} className="trainer-card">
               <div className="trainer-image-wrapper">
                 {/* PLACEHOLDER IMAGE - Replace with actual photo of Kyle */}
                 <img 
@@ -73,17 +74,17 @@ function Home() {
                   <span className="specialty-badge">Functional Training</span>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
 
       {/* Our Story Section */}
       <section className="story-section">
-        <div className="container">
+        <Container>
           <h2 className="section-title">Our Story</h2>
-          <div className="story-content">
-            <div className="story-text">
+          <Row className="story-content">
+            <Col lg={6} md={12} className="story-text">
               <p className="story-paragraph">
                 Our journey began in 2019 at Northern Illinois University, where Luke and Kyle 
                 first met as roommates. What started as a simple living arrangement quickly evolved 
@@ -102,63 +103,63 @@ function Home() {
                 on the knowledge and passion that brought us together, helping others discover their 
                 own strength and potential.
               </p>
-            </div>
-            <div className="story-image-wrapper">
+            </Col>
+            <Col lg={6} md={12} className="story-image-wrapper">
               {/* PLACEHOLDER IMAGE - Replace with photo of Luke and Kyle together */}
               <img 
                 src="https://via.placeholder.com/600x400/1a1a1a/dc143c?text=D%26E+P.T.+Story" 
                 alt="D&E P.T. Origin Story" 
                 className="story-image"
               />
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
 
       {/* Gallery Section */}
       <section className="gallery-section">
-        <div className="container">
+        <Container>
           <h2 className="section-title">Our Studio & Results</h2>
-          <div className="gallery-grid">
+          <Row className="gallery-grid">
             {/* PLACEHOLDER IMAGES - Replace with actual studio and client transformation photos */}
-            <div className="gallery-item">
+            <Col lg={4} md={6} sm={12} className="mb-4 gallery-item">
               <img 
                 src="https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Studio+1" 
                 alt="D&E P.T. Studio Interior 1" 
               />
-            </div>
-            <div className="gallery-item">
+            </Col>
+            <Col lg={4} md={6} sm={12} className="mb-4 gallery-item">
               <img 
                 src="https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Studio+2" 
                 alt="D&E P.T. Studio Interior 2" 
               />
-            </div>
-            <div className="gallery-item">
+            </Col>
+            <Col lg={4} md={6} sm={12} className="mb-4 gallery-item">
               <img 
                 src="https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Training+Session" 
                 alt="Personal Training Session" 
               />
-            </div>
-            <div className="gallery-item">
+            </Col>
+            <Col lg={4} md={6} sm={12} className="mb-4 gallery-item">
               <img 
                 src="https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Equipment" 
                 alt="Studio Equipment" 
               />
-            </div>
-            <div className="gallery-item">
+            </Col>
+            <Col lg={4} md={6} sm={12} className="mb-4 gallery-item">
               <img 
                 src="https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Transformation+1" 
                 alt="Client Transformation 1" 
               />
-            </div>
-            <div className="gallery-item">
+            </Col>
+            <Col lg={4} md={6} sm={12} className="mb-4 gallery-item">
               <img 
                 src="https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Transformation+2" 
                 alt="Client Transformation 2" 
               />
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
     </div>
   );
