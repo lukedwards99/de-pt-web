@@ -2,10 +2,10 @@
   {
     "id": 1,
     "type": "website",
-    "title": "12-Week Beginner Program",
-    "description": "Perfect for those just starting their fitness journey. Build a solid foundation with this comprehensive beginner program.",
-    "image": "https://via.placeholder.com/400x300/1a1a1a/dc143c?text=Beginner+Program",
-    "downloadLink": "#download-beginner-program",
+    "title": "bodyrecomposition.com",
+    "description": "Home of Lyle McDonald's comprehensive articles on fat loss, muscle gain, and body recomposition.",
+    "image": "https://bodyrecomposition.com/wp-content/uploads/2019/10/br_logo.jpg",
+    "downloadLink": "https://bodyrecomposition.com/bodyrecomposition-articles",
     "thirdPartyLink": true
   },
   {

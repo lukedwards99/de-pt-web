@@ -7,8 +7,8 @@ function VideoCard({ resource }) {
       <div className="resource-image">
         <img src={resource.image} alt={resource.title} />
         <div className="resource-type-badge">
-          <i className="fas fa-video"></i>
-          Video
+          <i className="fas fa-globe"></i>
+          Website 
         </div>
       </div>
       <div className="resource-content">
